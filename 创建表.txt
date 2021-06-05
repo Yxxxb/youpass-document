@@ -110,3 +110,10 @@ primary key(teacher_id,function_id),
 foreign key(teacher_id) references Teacher(Id),
 foreign key(function_id) references function(Id)
 );
+
+create table TodoList(
+person_id varchar(10),
+id int,
+description varchar(256),
+primary key(person_id,id)
+)
