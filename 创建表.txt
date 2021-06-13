@@ -25,8 +25,8 @@ foreign KEY(Teacher_id) references teacher(Id)
 
 create table Question_Option(
 Option_id int primary key,
+Question_id varchar(10) primary key,
 content varchar(256),
-Question_id varchar(10),
 foreign key(Question_id) references Question(Question_id)
 );
 
